@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>News Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="News Feed">
+  <meta name="author" content="SitePoint">
+
+  <style type="text/css">
+    html,body{
+        background-color: #d3d6db;
+        margin: 0;padding: 0;font-family: Helvetica;padding-top:44px;
+    }
+    #navBar {line-height: 44px; font-size: 22px;background-color: #415f9b; color:white;text-align:center;position:fixed;width:100%;top:0px;}
+    #navBar img{
+        height:22px; margin:10px;
+    }
+    #navBar img:first-child{float:left;}
+    #navBar img:last-child{float:right;}
+    #actionBar {
+        width:101%;
+        position:fixed;
+        top:44px;
+        clear:both;
+    }
+    #actionBar > div {
+        width:33%; display: inline-block; float: left; text-align: center;background-color: #f0f1f3; padding:10px 0;color:gray;
+        font-size: 20px;
+    }
+    #actionBar > div:nth-child(n+2){
+        border-left: 1px solid #d3d6db;
+    }
+    #actionBtnHolder > div:nth-child(n+2){
+        border-left: 1px solid #d3d6db;
+    }
+    .contentBlock{
+        background-color: white;font-size: 18px;  margin: 10px 0 0px 10px;display:inline-block; clear:both; width: calc(100% - 20px);
+    }
+    .contentBlock:last-child{
+        margin-bottom: 50px;
+    }
+    .profilePic{
+        float:left;height:60px; margin:5px 5px 5px 5px;
+    }
+    .commentBlock{
+        background-color: white;font-size: 18px;  margin: 0px 0px 0px 10px;display:inline-block; clear:both; width: calc(100% - 20px);
+    }
+    .timestamp{
+        color:gray;margin-bottom:10px;
+    }
+    .sharedImage{
+        width:100%;clear:both;margin-top:10px;box-shadow:0px 0px 6px gray;
+    }
+    .actionBtn{
+        color:gray;float:left;width:33%;background-color: white;text-align: center; padding: 10px 0px 10px 0px;
+    }
+    .actionBtnTapped{
+        font-weight:bold;
+        color:#415f9b;
+    }
+    #tabBar{
+        position:fixed;width:100%;bottom:0px;color:gray;background-color: #415f9b;line-height: 44px;
+    }
+    #tabBar > div{
+        float:left;width:19.5%;text-align:center;color:white;
+    }
+    #tabBar > div:nth-child(n+2){
+        border-left: 1px solid #d3d6db;
+    }
+ 
+
+  </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+    <script type="text/javascript" charset="utf-8">
+    
+    </script>
+</head>
+    
+<body>
+    <div id="navBar">
+            <img   src="magnifying-glass.png">
+            News Feed
+            <img src="person.png">
+    </div>
+    <div id="actionBar">
+        <div> Status</div>
+        <div> Photo</div>
+        <div> Check In</div>
+    </div>
+    <div id="tabBar">
+            <div>News Feed</div>
+            <div>Requests</div>
+            <div>Messages</div>
+            <div>Notifications</div>
+            <div>More</div>
+        </div>
+    <div class="contentBlock">
+        <img class="profilePic" src="lama.jpg">
+        Lama
+        <div class="timestamp"> Yesterday, in Fremont </div>
+        <div class="msg">Good friends, good food, and a lot of laughs.</div>
+        <img class="sharedImage" src="forest.jpg">
+        
+        <div class="timestamp"> 10 comments 3 likes</div>
+        <div id="actionBtnHolder">
+            <div class="actionBtn" onClick="this.className = 'actionBtn actionBtnTapped';">Like</div>
+            <div class="actionBtn">Comment</div>
+            <div class="actionBtn">Share</div>
+        </div>
+
+    </div>
+
+    <div class="contentBlock">
+            <img class="profilePic" src="lama.jpg">
+            Lama
+            <div class="timestamp"> Yesterday, in Fremont </div>
+            <div class="msg">Good friends, good food, and a lot of laughs.</div>
+            <img class="sharedImage" src="forest.jpg">
+            
+            <div class="timestamp"> 10 comments 3 likes</div>
+            <div id="actionBtnHolder">
+                <div class="actionBtn" onClick="this.className = 'actionBtn actionBtnTapped';">Like</div>
+                <div class="actionBtn">Comment</div>
+                <div class="actionBtn">Share</div>
+            </div>
+        </div>
+
+        <div class="contentBlock">
+            <img class="profilePic" src="lama.jpg">
+            Lama
+            <div class="timestamp"> Yesterday, in Fremont </div>
+            <div class="msg">Good friends, good food, and a lot of laughs.</div>
+            <img class="sharedImage" src="forest.jpg">
+            <div class="timestamp"> 10 comments 3 likes</div>
+            <div id="actionBtnHolder">
+                <div class="actionBtn" onClick="this.className = 'actionBtn actionBtnTapped';">Like</div>
+                <div class="actionBtn">Comment</div>
+                <div class="actionBtn">Share</div>
+            </div>
+        </div>
+   </body>
+</html>
